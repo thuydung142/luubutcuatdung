@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-script: "Great Vibes", cursive;
+  --font-serif: "Playfair Display", serif;
+  --font-nunito: "Nunito", sans-serif;
+}
+
+@layer utilities {
+  .bg-caro-pattern {
+    background-image: 
+      linear-gradient(rgba(170, 215, 255, 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(170, 215, 255, 0.4) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-position: center center;
+  }
+}
+
+@layer components {
+  .sticker-float-1 {
+    animation: float1 4s ease-in-out infinite;
+  }
+  .sticker-float-2 {
+    animation: float2 5s ease-in-out infinite;
+  }
+  .sticker-float-3 {
+    animation: float3 6s ease-in-out infinite;
+  }
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+@keyframes float2 {
+  0%, 100% { transform: translateY(0) rotate(10deg); }
+  50% { transform: translateY(-12px) rotate(0deg); }
+}
+@keyframes float3 {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-8px) scale(1.1); }
+}
+

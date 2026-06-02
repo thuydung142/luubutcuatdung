@@ -1,0 +1,6 @@
+{
+  "name": "Lưu Bút Của Thùy Dung",
+  "description": "Trang web lưu bút dễ thương dành cho Thùy Dung với tông màu pastel và phong cách aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
