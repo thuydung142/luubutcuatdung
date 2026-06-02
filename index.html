@@ -5,9 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lưu Bút Của Thùy Dung</title>
     
+    <!-- Kho Font chuẩn từ Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;1,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bộ quy tắc ép Font theo đúng thiết kế Digital Illustration -->
+    <style>
+      /* 1. Nunito (Không chân, bo tròn): Dành cho nội dung form và body */
+      body, input, textarea, p {
+        font-family: 'Nunito', sans-serif !important;
+      }
+      
+      /* 2. Great Vibes (Script uốn lượn): Dành riêng cho chữ Thùy Dung (cỡ chữ lớn) */
+      h1, .font-script, [class*="text-5xl"], [class*="text-6xl"] {
+        font-family: 'Great Vibes', cursive !important;
+        font-weight: 400 !important;
+      }
+      
+      /* 3. Playfair Display (Serif cổ điển): Dành cho tiêu đề phụ, nhãn dán, và đặc biệt là NÚT BẤM */
+      h2, h3, h4, label, button, .font-serif {
+        font-family: 'Playfair Display', serif !important;
+      }
+      
+      /* Đệm thêm khoảng trống để không bị lẹm giao diện trên mobile */
+      #root {
+        padding-bottom: 80px; 
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
